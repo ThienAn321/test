@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" th:fragment="dynamic(main)" class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Furnish - Minimalist Furniture Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/client/img/favicon.png">
+    <link rel="stylesheet" href="/client/css/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="/client/css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/client/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/client/css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="/client/css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="/client/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/client/css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="/client/js/vendor/modernizr-3.11.2.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+
+        <!-- START HEADER SECTION -->
+        <header class="header-section section sticker header-transparent">
+            <div class="container-fluid">
+            <div th:replace="/layout/_menu.html"></div>
+                <!-- Mobile Menu Nav -->
+                <div class="mobile-menu"></div>
+            </div>
+        </header>
+        <!-- END HEADER SECTION -->
+        <!-- Search Modal -->
+        <div class="search-modal modal fade text-center" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <button type="button" class="btn-modal-close" data-bs-dismiss="modal"><i class="pe-7s-close"></i></button>
+                    <div class="header-search-form">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                            <button><i class="pe-7s-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div th:replace="${main}"></div>
+		<!-- SERVICE SECTION START -->
+        <div class="service-section section pt-70 pb-40">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Service -->
+                    <div class="single-service col-lg-3 col-6 mb-6">
+                        <div class="service-icon">
+                            <i class="pe-7s-world"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>FREE SHIPPING</h3>
+                            <p>Free shipping on all UK orders</p>
+                        </div>
+                    </div>
+                    <!-- Single Service -->
+                    <div class="single-service col-lg-3 col-6 mb-6">
+                        <div class="service-icon">
+                            <i class="pe-7s-refresh"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>FREE EXCHANGE</h3>
+                            <p>30 days return on all items</p>
+                        </div>
+                    </div>
+                    <!-- Single Service -->
+                    <div class="single-service col-lg-3 col-6 mb-6">
+                        <div class="service-icon">
+                            <i class="pe-7s-headphones"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>PREMIUM SUPPORT</h3>
+                            <p>We support online 24 hours a day</p>
+                        </div>
+                    </div>
+                    <!-- Single Service -->
+                    <div class="single-service col-lg-3 col-6 mb-6">
+                        <div class="service-icon">
+                            <i class="pe-7s-gift"></i>
+                        </div>
+                        <div class="service-title">
+                            <h3>BLACK FRIDAYsss</h3>
+                            <p>Shocking discount on every friday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICE SECTION END -->
+        <!-- FOOTER TOP SECTION START -->
+        <div class="footer-top-section section pb-60 pt-100">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Widget -->
+                    <div class="footer-widget col-lg-3 col-md-6 col-12 mb-8">
+                        <h4 class="widget-title">Contact Info</h4>
+                        <p><strong>Address :</strong> <span>28 Green Tower, Street Name, New York City, USA</span></p>
+                        <p><strong>Phone :</strong> <span>+8880 44338899</span></p>
+                        <p><strong>Email :</strong> <a href="#">yourmail@outlook.com</a></p>
+                        <!-- Footer Social -->
+                        <div class="footer-social fix">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.rss.com/" target="_blank" rel="noopener"><i class="fa fa-rss"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <!-- Footer Widget -->
+                    <div class="footer-widget link-widget col-lg-3 col-md-6 col-12 mb-8">
+                        <h4 class="widget-title">accounts</h4>
+                        <ul>
+                            <li><a href="register.html">My Account</a></li>
+                            <li><a href="wishlist.html">My Wishlist</a></li>
+                            <li><a href="cart.html">My Cart</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="checkout.html">Check out</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Widget -->
+                    <div class="footer-widget col-lg-3 col-md-6 col-12 mb-8">
+                        <h4 class="widget-title">tags</h4>
+                        <div class="tag-cloud fix">
+                            <a href="shop.html">brand</a>
+                            <a href="shop.html">fashion</a>
+                            <a href="shop.html">sale</a>
+                            <a href="shop.html">winter sale</a>
+                            <a href="shop.html">summer sale</a>
+                            <a href="shop.html">men</a>
+                            <a href="shop.html">women</a>
+                            <a href="shop.html">kids</a>
+                        </div>
+                    </div>
+                    <!-- Footer Widget -->
+                    <div class="footer-widget col-lg-3 col-md-6 col-12 mb-8">
+                        <h4 class="widget-title">Newsletters</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt.</p>
+                        <form class="sunscribe-form">
+                            <input type="email" class="email" placeholder="Email Address">
+                            <div class="clear"><input type="submit" class="button" value="Subscribe"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER TOP SECTION END -->
+
+        <!-- FOOTER BOTTOM SECTION START -->
+        <div class="footer-bottom-section section pb-20 pt-20">
+            <div class="container">
+                <div class="row">
+                    <!-- Copyright -->
+                    <div class="copyright text-center text-md-start col-md-6 col-12">
+                        <p>© 2022 Furnish. Made with <i class="fa fa-heart heart-icon"></i> By <a target="_blank" href="https://hasthemes.com">HasThemes</a></p>
+                    </div>
+                    <!-- Payment Method -->
+                    <div class="payment-method text-center text-md-end col-md-6 col-12">
+                        <a href="shop.html">
+				<img src="img/payment/1.png" alt="payment" />
+				<img src="img/payment/2.png" alt="payment" />
+				<img src="img/payment/3.png" alt="payment" />
+				<img src="img/payment/4.png" alt="payment" />
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM SECTION END -->
+
+
+
+    </div>
+    <!-- Body main wrapper end -->
+
+
+    <!-- Placed JS at the end of the document so the pages load faster -->
+
+    <!-- jQuery latest version -->
+    <script src="/client/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/client/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/client/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/client/js/plugins.js"></script>
+    <!-- Ajax Mail js -->
+    <script src="/client/js/ajax-mail.js"></script>
+    <!-- Main js -->
+    <script src="/client/js/main.js"></script>
+
+</body>
+
+</html>
